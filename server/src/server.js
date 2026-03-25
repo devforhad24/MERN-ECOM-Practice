@@ -1,5 +1,7 @@
-const app = require('./app')
+const app = require('./app');
+const { serverPort } = require('./secret');
 
-app.listen(3001, () => {
-  console.log(`server is runnig on at http://localhost:3001`);
+
+app.listen(serverPort, () => {
+  console.log(`server is runnig on at http://localhost:${serverPort}`);
 });
