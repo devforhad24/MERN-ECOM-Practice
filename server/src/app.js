@@ -3,6 +3,7 @@ const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const createError = require("http-errors");
 const rateLimit = require("express-rate-limit");
+const userRouter = require("./routers/userRouter");
 
 const app = express();
 
@@ -17,17 +18,14 @@ app.use(morgan("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use('/api/users',userRouter);
+
 app.get("/test", (req, res) => {
   res.status(200).send({
     message: "API is working fine!",
   });
 });
 
-app.get("/api/users", (req, res) => {
-  res.status(200).send({
-    message: "User profile retrieved successfully!",
-  });
-});
 
 // client side error handling
 app.use((req, res, next) => {
