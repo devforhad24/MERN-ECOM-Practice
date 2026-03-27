@@ -52,11 +52,11 @@ const getUsers = async (req, res, next) => {
 }; // end method
 
 // fetch user by id
-const getUser = async (req, res, next) => {
+const getUserById = async (req, res, next) => {
   try {
     const id = req.params.id;
     const options = { password: 0 };
-    const user = await findWithId(id, options);
+    const user = await findWithId(User, id, options);
 
     return successResponse(res, {
       statusCode: 200,
@@ -69,11 +69,11 @@ const getUser = async (req, res, next) => {
 }; // end method
 
 // delete user by id
-const deleteUser = async (req, res, next) => {
+const deleteUserById = async (req, res, next) => {
   try {
     const id = req.params.id;
     const options = { password: 0 };
-    const user = await findWithId(id, options);
+    const user = await findWithId(User, id, options);
 
     const userImagePath = user.image;
     fs.access(userImagePath, (err) => {
@@ -87,7 +87,7 @@ const deleteUser = async (req, res, next) => {
       }
     });
 
-    await User.findByIdAndDelete({_id:id, isAdmin: false});
+    await User.findByIdAndDelete({ _id: id, isAdmin: false });
 
     return successResponse(res, {
       statusCode: 200,
@@ -98,4 +98,4 @@ const deleteUser = async (req, res, next) => {
   }
 }; // end method
 
-module.exports = { getUsers, getUser, deleteUser };
+module.exports = { getUsers, getUserById, deleteUserById };

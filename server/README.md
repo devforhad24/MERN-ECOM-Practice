@@ -1,6 +1,6 @@
 # MERN Stack E-Commerce Project
 
-# Author : <i color="green">Forhad Hossain</i>
+# Author : <i>Forhad Hossain</i>
 
 ## 1. Create express server -> express
 ## 2. HTTP request and response
@@ -20,5 +20,11 @@
 ## 16. GET /api/users/:id -> get a single user by id
 ## 17. How to create services in the backend
 ## 18. DELETE /api/users/:id -> delete a single user by id
+## 19. Refactoring & reusablity, dynamic 
+## 20. Add express validator middleware
+## 21. Add multer middleware for file upload
+## 22. POST /api/users -> create an user
+## 23. PUT /api/users/:id -> update a single user by id
+
 
 

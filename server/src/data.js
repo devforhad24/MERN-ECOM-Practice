@@ -21,6 +21,20 @@ const data = {
       phone: "0564564105",
       address: "unknown, location not found",
     },
+        {
+      name: "Abc Ahmed",
+      email: "abc.test@gmail.com",
+      password: "12348888",
+      phone: "0256324205",
+      address: "noakhali, bangladesh",
+    },
+    {
+      name: "Xyz Ahmed",
+      email: "xyz.test@gmail.com",
+      password: "123456",
+      phone: "0638945999",
+      address: "dhaka, bangladesh",
+    }
   ],
 };
 
