@@ -1,6 +1,6 @@
 # MERN Stack E-Commerce Project
 
-# Author : <font color="red">Forhad Hossain</font>
+# Author : <i color="green">Forhad Hossain</i>
 
 ## 1. Create express server -> express
 ## 2. HTTP request and response
@@ -19,5 +19,6 @@
 ## 15. Response Handler controller for error or success
 ## 16. GET /api/users/:id -> get a single user by id
 ## 17. How to create services in the backend
+## 18. DELETE /api/users/:id -> delete a single user by id
 
 
