@@ -24,8 +24,9 @@
 ## 20. Delete iamge helper
 ## 21. Add express validator middleware
 ## 22. Add multer middleware for file upload
-## 23. POST /api/users -> create an user
-## 24. PUT /api/users/:id -> update a single user by id
+## 23. POST /api/users/process-register -> process the registration
+## 24. POST /api/users/verify -> verify + register into database
+## 25. PUT /api/users/:id -> update a single user by id
 
 
 
