@@ -21,10 +21,11 @@
 ## 17. How to create services in the backend
 ## 18. DELETE /api/users/:id -> delete a single user by id
 ## 19. Refactoring & reusablity, dynamic 
-## 20. Add express validator middleware
-## 21. Add multer middleware for file upload
-## 22. POST /api/users -> create an user
-## 23. PUT /api/users/:id -> update a single user by id
+## 20. Delete iamge helper
+## 21. Add express validator middleware
+## 22. Add multer middleware for file upload
+## 23. POST /api/users -> create an user
+## 24. PUT /api/users/:id -> update a single user by id
 
 
 
